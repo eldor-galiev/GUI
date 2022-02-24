@@ -6,7 +6,7 @@ public class homework {
         int finish = 2_147_483_647;
         int mid = (start + finish) / 2;
         boolean isFound = false;
-        int sign; //1 - меньше; 2 - больше ; 0 - ровно
+        int sign;
         int count = 1;
         while (!isFound) {
             System.out.println(count + ")" + "Your number is "+ mid + "?");
