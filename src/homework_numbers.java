@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class homework {
+public class homework_numbers {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int start = 0;
@@ -8,6 +8,7 @@ public class homework {
         boolean isFound = false;
         int sign;
         int count = 1;
+        
         while (!isFound) {
             System.out.println(count + ")" + "Your number is "+ mid + "?");
             System.out.println("1 - less; 2 - more; 0 - equal");
