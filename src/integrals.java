@@ -1,17 +1,18 @@
+package com.company;
 import java.util.Scanner;
 
-public class integrals {
+public class Task3 {
+    public static double functionF(double x, double index){
+        return (Math.pow(x, index + 1))/(index + 1);
+    };
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Input your numbers");
-        int a = in.nextInt();
-        int b = in.nextInt();
-        System.out.println("Интеграл: " + F(a,b));
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите начало отрезка");
+        int a = scan.nextInt();
+        System.out.println("Введите конец отрезка");
+        int b = scan.nextInt();
+        double F_a = functionF(a, 4) + functionF(a, 2) + functionF(a, 1) -7*a;
+        double F_b = functionF(b, 4) + functionF(b, 2) + functionF(b, 1) - 7*b;
+        System.out.println(F_b - F_a);
     }
-    public static double F(int a, int b) {
-        double fa = Math.pow(a,5.0)/5 +Math.pow(a,3)/3 +Math.pow(a,2)/2 -7*a;
-        double fb = Math.pow(b,5.0)/5 +Math.pow(b,3)/3 +Math.pow(b,2)/2 -7*b;
-        return (fb - fa);
-    }
-
 }
